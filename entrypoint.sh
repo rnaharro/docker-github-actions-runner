@@ -180,6 +180,10 @@ if [[ ${_START_DOCKER_SERVICE} == "true" ]]; then
   ${_PREFIX} service docker start
 fi
 
+. $HOME/.nvm/nvm.sh
+nvm install 14.0.0
+npm install --global yarn
+
 # Container's command (CMD) execution as runner user
 
 
